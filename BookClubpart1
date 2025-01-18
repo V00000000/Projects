@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><!-- Author: Vaskar Ghimirey, 000937198 -->
+  <title>Book Catalog</title>
+  <style>
+        h1 { text-align:Center;
+                background-color: lightblue;
+                }
+        h2 { 
+        color: White;
+        background-color: lightblue;
+                }
+        
+        P {color:black;}
+        
+        footer{color:black;
+        background-color: lightblue;
+        text-align:center;
+        }
+        nav li{
+        display: inline;
+        list-style-type:none}
+  </style>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section id="Top">
+    <h1><u>Vaskar's Book Club Reading List</u></h1>
+  </section>
+  
+    <p>All books are available on <a href="https://www.amazon.ca" title="Amazon">Amazon</a> . The images and text descriptions were obtained from the Amazon website.</p>
+    <p>You can track your book collection using this <a href="assets/bookcollection.xlsx" target="blank">Book Collection Excel file</a></p>
+    <nav>
+      <p>Book Title:</p>
+    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#A">A</a>
+          </li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
+          <li>E</li>
+          <li>F</li>
+          <li>
+            <a href="#G">G</a>
+          </li>
+          <li>
+            <a href="#H">H</a>
+          </li>
+          <li>
+            <a href="#I">I</a>
+          </li>
+          <li>J</li>
+          <li>K</li>
+          <li>L</li>
+          <li>M</li>
+          <li>N</li>
+          <li>O</li>
+          <li>P</li>
+          <li>Q</li>
+          <li>R</li>
+          <li>
+            <a href="#S">S</a>
+          </li>
+          <li>
+            <a href="#T">T</a>
+          </li>
+          <li>U</li>
+          <li>V</li>
+          <li>W</li>
+          <li>X</li>
+          <li>Y</li>
+          <li>Z</li>
+          <li>(<a href="Non-fiction-book.html">Non-fiction-book</a>)
+          </li><!-- Add more letters for navigation as needed -->
+        </ul>
+      </nav>
+    </header>
+  
+  <section id="A">
+    <h2>All creatures Great and Small</h2><img src="images/allcreatures.jpg" alt=" all creature "> <a href="http://www.amazon.ca/All-Creatures-Great-Small-Memoirs/dp/1250766338/ref=sr_1_6?crid=11A4VWR1SGST5&amp;keywords=all+creatures+great+small&amp;qid=1696388100&amp;sprefix=ALL+CREATURES+&amp;2caps&amp;2C113&amp;sr=8-6" target="blank"></a>
+    <p><a href="http://www.amazon.ca/All-Creatures-Great-Small-Memoirs/dp/1250766338/ref=sr_1_6?crid=11A4VWR1SGST5&amp;keywords=all+creatures+great+small&amp;qid=1696388100&amp;sprefix=ALL+CREATURES+&amp;2caps&amp;2C113&amp;sr=8-6" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a></p>
+    <p><strong>Author: James Herriot</strong></p>
+    <p><strong>Description:</strong></p>
+    <p>Fresh out of Glasgow Veterinary College, to the young James Herriot 1930s Yorkshire seems to offers an idyllic pocket of rural life in a rapidily changing world. But from his erratic new colleagues, brothers Siegfried and Tristan Farnon, to incomprehensible farmers, herds of semi-feral cattle, a pig called Nugent and an overweight Pekingese called Tricki Woo, James find he is on a learning curve as steep as the hills around him. And when he meets Helen, the beautiful daughter of a local farmer, all the training and experience in the world can't help him.</p>
+    <p>Since they were first published, James Herriot's memoirs have sold millions of copies and entranced generations of animal lovers. Charming, funny, and touching, All Creatures Great and Small in a heart-warming story of determination, love and companionship from one of Britain's best-loved authors.</p><a href="#top">Go to the Top</a>
+    <h2>Atomic Habits</h2><img src="images/atomichabits.jpg" alt=" atomic habits "> <a href="http://www.amazon.ca/Atomic-Habits-Proven-Build-Break/dp/0735211299/ref=sr_1_1?crid=3LKRBPJM4KPXG&amp;keywords=atomic+habits&amp;qid=169768737&amp;sprefix=atomic+hab%2Caps%2C90&amp;sr=8=1" target="blank"></a>
+    <p><a href="http://www.amazon.ca/Atomic-Habits-Proven-Build-Break/dp/0735211299/ref=sr_1_1?crid=3LKRBPJM4KPXG&amp;keywords=atomic+habits&amp;qid=169768737&amp;sprefix=atomic+hab%2Caps%2C90&amp;sr=8=1" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a></p>
+    <p><strong>Author: James Clear</strong></p>
+    <p>Description</p>
+    <p>No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world;s leading experts on habits formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.</p>
+    <p>If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeats themselves again and again not because you don't want to change, but beacause you have the wrong system for change. You do not rise to the level of your goals. You fall to the level of your system. Here you'll get a proven system that can take you to new height.</p><a href="#top">Go to the top</a>
+  </section>
+  <section id="H">
+    <h2>Harry Potter and The Philospher's Stone</h2><a href="http://www.amazon.ca/Harry-Potter-Philosphers-Stone-Rowling/dp/1408855658/ref=sr_1_2?crid=2JOOA09VGMTWO&amp;keywords=harry+potter+and+the+philospher&amp;27s+stone&amp;qid=1697648802&amp;sprefix=harry+potter+and+the+philospher&amp;27s+stone&amp;2Caps&amp;2C72&amp;sr=8-2" target="blank"><img src="images/harrypotter.jpg" alt="Harry Potter And The Philospher Stone"></a>
+    <p><a href="http://www.amazon.ca/Harry-Potter-Philosphers-Stone-Rowling/dp/1408855658/ref=sr_1_2?crid=2YW0LK2JTDP0&amp;keywords=harry+potter+and+the+philospher&amp;27s+stone+red+cove&amp;2Caps&amp;2C86&amp;sr=8-2" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a></p>
+    <p><strong>Author: J.K. Rowling</strong></p>
+    <p><strong>Description</strong></p>
+    <p>Harry Potter has never even heard of Hogwarts when the letters start droppingon the doormat at number four, Privet Drive. Addressed in green inkon yellowish parchment with purple seal, they are swiftly confiscated by his grisly aunt and uncle.Then, Harry's eleventh birthday, a great beetle-eye of a man called Rubeus Hagrid burst in with some astonishing news: Harry Potter is a wizzard and has a place at Hogwarts School of Witchcraft and wizaredry. An incredible Adventure is about to begin!</p>
+    <p>Having now become classics of our time, the Harry Potter ebook never fails to comfort and escapism to readers of all ages. With it's message of hope, belonging and the enduring power of truth and love, the story of the Boy Who continues to delight generation of new readers.</p>
+  </section><a href="#top">Go to the Top</a>
+  <section id="I">
+    <h2>Inspired: How to Create Tech Products Customers Love</h2><a href="http://www.amazon.ca/INSPIRED-Create-Tech-Products-Customer/dp/1119387507/ref=sr1_1?crid=2Q0VJ5R1D7DF3&amp;keywords=Inspired&amp;3A+How+to+Create+Tech+Products+Customers+Love&amp;qid=1697648895&amp;sprefix=inspired+how+to+create+tech+products+customers+love&amp;2Caps&amp;2C105&amp;sr=8-1" target="blank"><img src="images/inspired.jpg" alt="Inspired"></a>
+    <p><a href="http://www.amazon.ca/INSPIRED-Create-Tech-Products-Customer/dp/1119387507/ref=sr1_1?crid=2Q0VJ5R1D7DF3&amp;keywords=Inspired&amp;3A+How+to+Create+Tech+Products+Customers+Love&amp;qid=1697648895&amp;sprefix=inspired+how+to+create+tech+products+customers+love&amp;2Caps&amp;2C105&amp;sr=8-1" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a></p>
+    <p><strong>Author: Marty Cagen</strong></p>
+    <p><strong>Description:</strong></p>
+    <p>How do today's most succesful tech companies-Amazon, Google, Facebook, Netflix, Tesla-design, develop, and deploy the products that have earned the love of literally billions of people around the world? perhaps surprisingly, they do it very differently than most tech companies. In INSPIRED, technology product management throught leader Marty Cargen provides readers with a master class in how to structure and staff a vibrant and succesful product organization, and how to discover and deliver technology products that your customer will love-and that will work for your business.</p>
+  </section>
+  <h2>Irish Fairy Tales</h2><a href="https://www.amazon.com/Irish-Fairy-Tales-Folklore-Yeats/dp/194984644X/ref=sr_1_2?keywords=irish+fairy+tales+book&amp;sr=8-2" target="blank"><img src="images/irishfairytales.jpg" alt="Irish fairy tale"></a> <a href="https://www.amazon.com/Irish-Fairy-Tales-Folklore-Yeats/dp/194984644X/ref=sr_1_1?keywords=irish+fairy+tales+and+folklore&amp;sr=8-1" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a>
+  <p><strong>Author: W.B. Yeats</strong></p>
+  <p><strong>Description:</strong></p>
+  <p>Originally published as two separate volumes in 1800s, this premier collection of Irish stories edited and compiled W. B. Yeats is the perfect gift for any lover of Irish literature and folklore. The lyrical prose and rich cultural heritage of each tale will captivate and enchant readers of all ages and keep them entertained for hours on end.</p><a href="#top">Go to the top</a>
+  <section id="S">
+    <h2>Still Life</h2><img src="images/stilllife.jpg" alt="stilllife"> <a href="https://www.amazon.com/Still-Life-Chief-Inspector-Gamache-ebook/dp/B098D92PW5/ref=sr_1_4?keywords=still+life+book+louise+penny+long+way+home&amp;s=audible&amp;sr=1-4-catcorr" target="blank"></a><a href="https://www.amazon.com/Still-Life-Chief-Inspector-Gamache-ebook/dp/B098D92PW5/ref=sr_1_4?keywords=still+life+book+louise+penny+long+way+home&amp;s=audible&amp;sr=1-4-catcorr" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a>
+    <p><strong>Author: Louise Penny</strong></p>
+    <p><strong>Description:</strong></p>
+    <p>The discovery of a dead body in the woods on Thanksgiving Weekend brings Chief Inspector Armand Gamache and his colleagues from the Surete du Quebec to a small village in the Eastern Townships. Gamache cannot understand why anyone would want to deliberately kill well-loved artist Jane Neal, especially any of the residents of Three Pines - a place so free from crime it doesn't even have its own police force.</p>
+    <p>But Gamache knows that evil is lurking somewhere behind the white picket fences and that, if he watches closely enough, Three Pines will start to give up its dark secrets...</p><a href="#top">Go to the top</a>
+  </section>
+  <section id="T">
+    <h2>The Best-Ever Cookie Book</h2><a href="https://www.amazon.com/Good-Housekeeping-Best-Ever-Cookie-Tested-til-Perfect/dp/1950785882/ref=sr_1_1?keywords=the+best+ever+cookie+book&amp;sr=8-1" target="blank"><img src="images/thebestevercookiebook.jpg" alt="thebestevercookiebook"></a> <a href="https://www.amazon.com/Good-Housekeeping-Best-Ever-Cookie-Tested-til-Perfect/dp/1950785882/ref=sr_1_1?keywords=the+best+ever+cookie+book&amp;sr=8-1" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a>
+    <p><strong>Author: Good HouseKeeping</strong></p>
+    <p><strong>Description:</strong></p>
+    <p>Everyone loves a cookie! Whether you go right to the chocolate or are more of a buttery shortbread fan, there's a special cookie here just for you. The Good Housekeeping Test Kitchen presents their best-ever, tested-‘til-perfect recipes so you can find your soulmate in sweetness. Plus, a chapter devoted to holiday cookies will become your favorite for celebrations all year round.</p><a href="#top">Go to the top</a>
+    <h2>The Complete Works of William Shakespeare</h2><img src="images/shakespeare.jpg" alt="shakespeare"> <a href="https://www.amazon.com/Complete-William-Shakespeare-Leather-bound-Classics/dp/162686098X/ref=sr_1_2?keywords=The+Complete+Works+of+William+Shakespeare&amp;sr=8-2" target="blank"></a><a href="https://www.amazon.com/Complete-William-Shakespeare-Leather-bound-Classics/dp/162686098X/ref=sr_1_2?keywords=The+Complete+Works+of+William+Shakespeare&amp;sr=8-2" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em></a>
+    <p><strong>Author: William Shakespeare</strong></p>
+    <p><strong>Description:</strong></p>
+    <p>Romeo and Juliet, A Midsummer Night’s Dream, King Lear, Hamlet, and Macbeth—the works of William Shakespeare still resonate in our imaginations four centuries after they were written. The timeless characters and themes of the Bard’s plays fascinate us with their joys, struggles, and triumphs, and now they are available in a special volume for Shakespeare fans everywhere. This Canterbury Classics edition of William Shakespeare’s works includes all of his poems and plays in an elegant, leather-bound, keepsake edition. Whether for a Shakespeare devotee or someone just discovering him, this is the perfect place to experience the drama of Shakespeare’s words. A scholarly introduction provides additional context and insight into the poems and plays. Specially designed end papers, a ribbon bookmark, and other enhancements complete the package and make this the perfect gift for any lover of literature—a book to read and treasure!</p><a href="#top">Go to the top</a>
+    <h2>The Wok</h2><img src="images/thewok.jpg" alt="thewok"> <a href="https://www.amazon.com/Wok-Techniques-J-Kenji-L%C3%B3pez-Alt/dp/0393541215/ref=sr_1_2?keywords=wok+book&amp;sr=8-2" target="blank"></a><a href="https://www.amazon.com/Wok-Techniques-J-Kenji-L%C3%B3pez-Alt/dp/0393541215/ref=sr_1_2?keywords=wok+book&amp;sr=8-2" target="blank" title="Buy on Amazon"><em>Buy on Amazon</em>
+    <p><strong>Author: J. Kenji López-Alt</strong></p>
+    <p><strong>Description:</strong></p>
+    <p>J. Kenji López-Alt’s debut cookbook, The Food Lab, revolutionized home cooking, selling more than half a million copies with its science-based approach to everyday foods. And for fast, fresh cooking for his family, there’s one pan López-Alt reaches for more than any other: the wok.</p>
+    <p>Whether stir-frying, deep frying, steaming, simmering, or braising, the wok is the most versatile pan in the kitchen. Once you master the basics—the mechanics of a stir-fry, and how to get smoky wok hei at home—you’re ready to cook home-style and restaurant-style dishes from across Asia and the United States, including Kung Pao Chicken, Pad Thai, and San Francisco–Style Garlic Noodles. López-Alt also breaks down the science behind beloved Beef Chow Fun, fried rice, dumplings, tempura vegetables or seafood, and dashi-simmered dishes.</p></a> <a href="#top">Go to the top</a>
+  </section>
+  <section id="G">
+    <h2>Ghost Stories</h2><a href="https://www.amazon.com/Roald-Dahls-Book-Ghost-Stories/dp/0374518688/ref=sr_1_1?keywords=Roald+Dahl%E2%80%99s+Book+of+Ghost+Stories%2C+selected+by+Roald+Dahl+%281983%29&amp;sr=8-1" target="blank"><img src="images/Ghoststories.jpg" alt="Ghoststories"></a> <a href="https://www.amazon.com/Roald-Dahls-Book-Ghost-Stories/dp/0374518688/ref=sr_1_1?keywords=Roald+Dahl%E2%80%99s+Book+of+Ghost+Stories%2C+selected+by+Roald+Dahl+%281983%29&amp;sr=8-1" target="blank" title="Buy on amazon"><em>Buy on Amazon</em>
+    <p><strong>Author: Roald Dahls</strong></p>
+    <p>Who better to investigate the literary spirit world than that supreme connoisseur of the unexpected? From the author of such beloved books as James and the Giant Peach, Charlie and the Chocolate Factory, and The Witches comes a collection of spooky tales carefully curated by the author himself, Roald Dahl's Book of Ghost Stories. Of the many permutations of the macabre or bizarre, Dahl was always especially fascinated by the classic ghost story. As he relates in the erudite introduction to this volume, he read some 749 supernatural tales at the British Museum Library before selecting the 14 that comprise this anthology. "Spookiness is, after all, the real purpose of the ghost story," Dahl writes. "It should give you the creeps and disturb your thoughts." For this superbly disquieting collection, Dahl offers favorite tales by such masterful storytellers as E. F. Benson, J. Sheridan Le Fanu, Rosemary Timperley, and Edith Wharton.</p></a> <a href="#top">Go to the top</a>
+  </section>
+  <p><strong>Description:</strong></p>
+  <footer>
+    <p><strong>Book Club Organizer</strong><br>
+    Vaskar Ghimirey: <a href="mailto:vaskarghimirey@mohawkcollege.ca">vaskarghimirey@mohawkcollege.ca</a><br>
+    Mobile: <a href="tel:(905)123-3245">(905)123-3245</a><br>
+    Office <a href="tel:(905)555-8888ext345">(905)555-8888 ext345</a><br></p>
+  </footer>
+</body>
+</html>
