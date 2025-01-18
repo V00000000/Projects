@@ -1,0 +1,285 @@
+package assignment8;
+// code by Vaskar Ghimirey, 000937198
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Random;
+
+public class TicTacToe implements ActionListener {
+
+    private Random random = new Random();
+    private JFrame frame = new JFrame();
+    private JPanel titlePanel = new JPanel();
+    private JPanel buttonPanel = new JPanel();
+    private JLabel textField = new JLabel();
+    private JLabel roundWinnerLabel = new JLabel("");
+    private JButton[] buttons = new JButton[9];
+    private boolean player1Turn;
+    private int player1Score = 0;
+    private int player2Score = 0;
+    private int roundCount = 0;
+    private String playerOne;
+    private String playerTwo;
+    private int lastMoveIndex = -1;
+    private String lastMoveSymbol = "";
+
+    // Constructor
+    public TicTacToe() {
+        // Set up the frame
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(800, 800);
+        frame.getContentPane().setBackground(new Color(50, 50, 50));
+        frame.setLayout(new BorderLayout());
+        frame.setVisible(true);
+
+        // Set up the title panel
+        textField.setBackground(new Color(25, 25, 25));
+        textField.setForeground(new Color(25, 255, 0));
+        textField.setFont(new Font("Ink Free", Font.BOLD, 75));
+        textField.setHorizontalAlignment(JLabel.CENTER);
+        textField.setText("Tic-Tac-Toe");
+        textField.setOpaque(true);
+
+        // Set up the button panel
+        titlePanel.setLayout(new BorderLayout());
+        titlePanel.setBounds(0, 0, 800, 100);
+        buttonPanel.setLayout(new GridLayout(3, 3));
+        buttonPanel.setBackground(new Color(150, 150, 150));
+
+        // Add buttons to the button panel and set up their properties
+        for (int i = 0; i < 9; i++) {
+            buttons[i] = new JButton();
+            buttonPanel.add(buttons[i]);
+            buttons[i].setFont(new Font("MV Boli", Font.BOLD, 120));
+            buttons[i].setFocusable(false);
+            buttons[i].addActionListener(this);
+        }
+
+        // Add components to the frame
+        titlePanel.add(textField);
+        titlePanel.add(roundWinnerLabel, BorderLayout.SOUTH);
+        frame.add(titlePanel, BorderLayout.NORTH);
+        frame.add(buttonPanel);
+
+        // Start the game
+        selectPlayers();
+    }
+
+    // Ask for player names and who goes first
+    private void selectPlayers() {
+        JOptionPane.showMessageDialog(null, "Welcome to Tic-Tac-Toe!");
+
+        playerOne = JOptionPane.showInputDialog("Enter player one's name:");
+        playerTwo = JOptionPane.showInputDialog("Enter player two's name:");
+
+        int choice = JOptionPane.showOptionDialog(null, "Who should go first?", "Select Starting Player",
+                JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, new String[]{playerOne, playerTwo}, playerOne);
+
+        if (choice == 1) {
+            String temp = playerOne;
+            playerOne = playerTwo;
+            playerTwo = temp;
+        }
+
+        textField.setText(playerOne + " will play as X, and " + playerTwo + " will play as O.");
+        firstTurn();
+    }
+
+    // Handle button clicks
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        for (int i = 0; i < 9; i++) {
+            if (e.getSource() == buttons[i]) {
+                // Check if the button was already clicked
+                if (!buttons[i].getText().isEmpty()) {
+                    // Undo the last move
+                    if (i == lastMoveIndex && buttons[i].getText().equals(lastMoveSymbol)) {
+                        buttons[i].setText("");
+                        lastMoveIndex = -1;
+                        lastMoveSymbol = "";
+                        player1Turn = !player1Turn;
+                        updateTurnLabel();
+                        return;
+                    }
+                }
+                // Check whose turn it is and update the button text accordingly
+                if (player1Turn) {
+                    if (buttons[i].getText().equals("")) {
+                        buttons[i].setForeground(new Color(255, 0, 0));
+                        buttons[i].setText("X");
+                        lastMoveIndex = i;
+                        lastMoveSymbol = "X";
+                        player1Turn = false;
+                        updateTurnLabel();
+                        check();
+                    }
+                } else {
+                    if (buttons[i].getText().equals("")) {
+                        buttons[i].setForeground(new Color(0, 0, 255));
+                        buttons[i].setText("O");
+                        lastMoveIndex = i;
+                        lastMoveSymbol = "O";
+                        player1Turn = true;
+                        updateTurnLabel();
+                        check();
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Update the turn label
+    private void updateTurnLabel() {
+        if (player1Turn) {
+            textField.setText(playerOne + "'s turn (X)");
+        } else {
+            textField.setText(playerTwo + "'s turn (O)");
+        }
+    }
+
+    // Determine who starts first
+    private void firstTurn() {
+        player1Turn = true;
+        updateTurnLabel();
+    }
+
+    // Check for win conditions or a draw
+    private void check() {
+        // Check win conditions
+        if (
+            // Horizontal wins
+                (buttons[0].getText().equals(buttons[1].getText()) && buttons[1].getText().equals(buttons[2].getText()) && !buttons[0].getText().equals("")) ||
+                        (buttons[3].getText().equals(buttons[4].getText()) && buttons[4].getText().equals(buttons[5].getText()) && !buttons[3].getText().equals("")) ||
+                        (buttons[6].getText().equals(buttons[7].getText()) && buttons[7].getText().equals(buttons[8].getText()) && !buttons[6].getText().equals("")) ||
+                        // Vertical wins
+                        (buttons[0].getText().equals(buttons[3].getText()) && buttons[3].getText().equals(buttons[6].getText()) && !buttons[0].getText().equals("")) ||
+                        (buttons[1].getText().equals(buttons[4].getText()) && buttons[4].getText().equals(buttons[7].getText()) && !buttons[1].getText().equals("")) ||
+                        (buttons[2].getText().equals(buttons[5].getText()) && buttons[5].getText().equals(buttons[8].getText()) && !buttons[2].getText().equals("")) ||
+                        // Diagonal wins
+                        (buttons[0].getText().equals(buttons[4].getText()) && buttons[4].getText().equals(buttons[8].getText()) && !buttons[0].getText().equals("")) ||
+                        (buttons[2].getText().equals(buttons[4].getText()) && buttons[4].getText().equals(buttons[6].getText()) && !buttons[2].getText().equals(""))
+        ) {
+            if (!(player1Turn)) {
+                xWins();
+            } else {
+                oWins();
+            }
+        } else if (isBoardFull()) {
+            draw();
+        }
+    }
+
+    // Check if the board is full
+    private boolean isBoardFull() {
+        for (int i = 0; i < 9; i++) {
+            if (buttons[i].getText().equals("")) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Handle X winning
+    private void xWins() {
+        player1Score++;
+        updateScore();
+        for (int i = 0; i < 9; i++) {
+            buttons[i].setEnabled(false);
+        }
+        roundWinnerLabel.setText(playerOne + " wins this round");
+        textField.setText(playerOne + "'s turn (X)"); // Set the turn to O for the next round
+        checkRoundEnd();
+    }
+
+    // Handle O winning
+    private void oWins() {
+        player2Score++;
+        updateScore();
+        for (int i = 0; i < 9; i++) {
+            buttons[i].setEnabled(false);
+        }
+        roundWinnerLabel.setText(playerTwo + " wins this round");
+        textField.setText(playerOne + "'s turn (X)"); // Set the turn to X for the next round
+        checkRoundEnd();
+    }
+
+    // Handle a draw
+    private void draw() {
+        int choice = JOptionPane.showConfirmDialog(null, "It's a draw! Do you want to play again?", "Draw", JOptionPane.YES_NO_OPTION);
+        if (choice == JOptionPane.YES_OPTION) {
+            resetGame();
+        } else {
+            endGame();
+        }
+    }
+
+    // Check if three rounds have been played
+    private void checkRoundEnd() {
+        roundCount++;
+        if (roundCount >= 3) {
+            if (player1Score > player2Score) {
+                gameOver(playerOne);
+            } else if (player2Score > player1Score) {
+                gameOver(playerTwo);
+            } else {
+                // If there is a tie, play another round
+                roundCount = 0;
+                player1Score = 0;
+                player2Score = 0;
+                resetGame();
+            }
+        } else {
+            playAgain();
+        }
+    }
+
+    // Reset the game board
+    private void resetGame() {
+        for (int i = 0; i < 9; i++) {
+            buttons[i].setEnabled(true);
+            buttons[i].setText("");
+        }
+        firstTurn();
+    }
+
+    // Ask if players want to play again
+    private void playAgain() {
+        int choice = JOptionPane.showConfirmDialog(null, "Do you want to play another round?", "Play Again", JOptionPane.YES_NO_OPTION);
+        if (choice == JOptionPane.YES_OPTION) {
+            resetGame();
+        } else {
+            endGame();
+        }
+    }
+
+    // Update the score display
+    private void updateScore() {
+        textField.setText("Score: " + playerOne + " - " + player1Score + ", " + playerTwo + " - " + player2Score);
+    }
+
+    // Handle the end of the game
+    private void gameOver(String winner) {
+        int choice = JOptionPane.showConfirmDialog(null, winner + " wins the game! Do you want to play again?", "Game Over", JOptionPane.YES_NO_OPTION);
+        if (choice == JOptionPane.YES_OPTION) {
+            player1Score = 0;
+            player2Score = 0;
+            updateScore();
+            roundCount = 0;
+            resetGame();
+        } else {
+            endGame();
+        }
+    }
+
+    // Close the game window
+    private void endGame() {
+        frame.dispose();
+    }
+
+    // Main method to start the game
+    public static void main(String[] args) {
+        new TicTacToe();
+    }
+}
