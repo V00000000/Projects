@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><!-- Author: Vaskar Ghimirey, 000937198 -->
+  <title>Book Catalog</title>
+  <style>
+        h1 { text-align:Center;
+                background-color: lightblue;
+                }
+        
+        P {color:black;}
+        
+        footer{color:black;
+        background-color: lightblue;
+        text-align:center;
+        }
+  </style>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1><u>Non-fiction Books</u></h1>
+  <p><a href="https://www.amazon.ca/Science-Books/b?ie=UTF8&amp;node=956280" title="Amazon Science and Math book list">Amazon Science and Math book list</a></p>
+  <footer>
+    <p><strong>Book Club Organizer</strong><br>
+    Vaskar Ghimirey: <a href="mailto:vaskarghimirey@mohawkcollege.ca">vaskarghimirey@mohawkcollege.ca</a><br>
+    Mobile: <a href="tel:(905)123-3245">(905)123-3245</a><br>
+    Office <a href="tel:(905)555-8888ext345">(905)555-8888 ext345</a><br></p>
+  </footer>
+</body>
+</html>
