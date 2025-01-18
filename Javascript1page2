@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta charset="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assign1.css"/>
+</head>
+
+    <nav> <ul><li><a href="./index.html">back</a></li></ul> </nav>
+<body>
+    <section>
+    <marquee behavior="alternate" direction="" scrollamount="30">
+    <marquee behavior="alternate" direction="down"  scrollamount="25">
+    <img src="football2.png" alt="Soccer" class="ball" width="100" height="100">
+
+    <marquee behavior="alternate" direction="" scrollamount="30">
+    <marquee behavior="alternate" direction="down"  scrollamount="25">
+    <img src="basketball.png" alt="Soccer" class="ball" width="100" height="100">
+
+    <marquee behavior="alternate" direction="" scrollamount="20">
+    <marquee behavior="alternate" direction="down"  scrollamount="35">
+    <img src="volleyball2.png" alt="Soccer" class="ball" width="100" height="100">
+    </section>
+</body>
+  
+</html>
+
