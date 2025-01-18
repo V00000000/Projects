@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Time</title>
+  <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+                header {
+                        background-color: white;
+            color: white;
+            padding: 10px;
+                        margin: 20px;
+                        padding: 15px;
+            
+        }
+                
+                .sign {
+                        float: right;
+                        margin: 17px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        background-color: #0172ba;
+                        color: white;
+                        text-decoration: none;
+                        border: 3px solid #0172ba;
+                        margin-right: 2%;
+                        padding: 10px;
+                        border-radius: 50px;
+						width: 5em;
+                        height: 1em;
+                
+                }
+                
+                .link {
+					display: flex;
+					justify-content: space-between;
+					
+                }
+                
+                .icon{
+                float:left;
+                margin-right:1px;
+                margin-left:1px;
+                }
+				
+                .sign:hover{
+                background-color:#089247;
+                }
+
+        nav {
+            top:2;
+			background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            background-color: #555; /* shape color */
+            border-radius: 30px 0;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #666; /* Change color on hover */
+        }
+                
+                
+                nav {
+                text-align:Center;
+                background-color: lightblue;
+                position:sticky;
+                top:0;
+                }
+        
+                
+                
+                h2 {
+                
+                background-color:blue;
+                }
+				
+				h4 {
+				color:lightblue;
+				}
+				
+				h5{
+				text-align: center;
+				}
+        .grid-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+      
+                
+                
+        .flex-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .flex-item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+            
+        }
+		
+		.flex-item a {
+			border: 1px solid black;
+		}
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+                        
+        }
+
+        
+
+        .footer-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-item ul li {
+            margin-bottom: 5px;
+        }
+
+        
+                
+        .footer2-text {
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            flex-direction: column;
+                        margin-top: -250px;
+                     
+                }
+                
+
+        .footer2-text h3 {
+           color: #0172BA;
+                
+                }
+                
+        
+                .footer-item h3{
+                border-bottom:1px solid #0172BA;
+                margin-top:13px;
+                }
+        
+                
+                .mini-grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin-top: 50px; border: 1px solid #ccc; /* Add border style */
+                        padding: 30px; /* Add padding for better visibility */
+                }
+                        
+        
+
+        .mini-grid-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .mini-grid-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        /* Add this CSS for the list and vertical line styling */
+        .grid-item h3 {
+            margin-top: 10px;
+            color: #333; /* Adjust the color as needed */
+        }
+
+        .list-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+                        
+        }
+
+        .left-list ,
+        .right-list {
+                grid-column: 1px;
+                grid-row: 2px;
+            list-style-type: none;
+            padding: 0px;
+                        
+        }
+
+        .left-list li,
+        .right-list li {
+            margin-bottom: 5px;
+        }
+
+        .vertical-line {
+            width: 1px;
+            height: 250px; /* Adjust the height as needed */
+            background-color: #ccc; /* Adjust the color as needed */
+        }
+                
+        .left-list h3,
+    .right-list h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #ccc; /* Add border style to the h3 elements in "National" and "Provincial" lists */
+      padding-bottom: 5px;
+          
+          }
+          
+         .left-list,
+    .right-list {
+      list-style-type: none;
+      padding: 0px;
+      border: 10px solid #ccc; /* Add border style to "National" and "Provincial" lists */
+      padding: 10px;
+          background-color:lightblue;
+    }
+	
+	.images1{
+	float: left;
+	display: inline-block;
+	margin: 2px;
+	}
+	.images2{
+	float: right;
+	}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="link">
+		<a><img src = "images/logos/traveltimehorizontal.png" alt="Pic"></a>
+		<a href="#" class="sign">Sign in</a>
+    </div>
+  </header>
+  <nav>
+    <span><a href="#">Home</a></span> <span><a href="#">Destinations</a></span> <span><a href="#">Activities</a></span> <span><a href="#">Contact</a></span>
+  </nav>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h2>Canoeing</h2>
+      <p>Canoeing is an activity which<br>
+      involves paddling a canoe with a<br>
+      single-bladed paddle. Common<br>
+      meanings of the term are limited to<br>
+      when the canoeing is the central<br>
+      purpose of the activity. Broader<br>
+      meanings include when it is<br>
+      combined with other activities such<br>
+      as canoe camping, or where<br>
+      canoeing is merely a transportation<br>
+      method used to accomplish other<br>
+      activities. Most present-day canoeing<br>
+      is done as or as a part of a sport or<br>
+      recreational activity. In some parts of<br>
+      Europe canoeing refers to both<br>
+      canoeing and kayaking, with a canoe<br>
+      being called an open canoe.</p><br>
+      <p>Canoes were developed by cultures<br>
+      all over the world, including some<br>
+      designed for use with sails or<br>
+      outriggers. Until the mid-1800s the<br>
+      canoe was an important means of<br>
+      transport for exploration and trade,<br>
+      and in some places it still is used as<br>
+      such, perhaps with the addition of an<br>
+      outboard motor. Where the canoe<br>
+      played a key role in history, such as<br>
+      the northern United States, Canada,<br>
+      and New Zealand, it remains an<br>
+      important theme in popular culture.</p><br>
+      <h2>Types of Canoes</h2>
+      <ul>
+        <li>Sprint</li>
+        <li>Slalom and Wildwater</li>
+        <li>Marathon</li>
+        <li>General Recreation</li>
+        <li>Touring and camping</li>
+        <li>Freestyle</li>
+      </ul>
+    </div>
+    <div class="grid-item">
+      <h2>Hiking</h2>
+	  <img class="images1" src="images/hiking150/hikingmountains150.jpg" alt="pic">
+      <p>In the United States, Canada, the Republic of Ireland, and United Kingdom, hiking means<br>
+      walking outdoors on a trail, or off trail, for recreational purposes. A day hike refers to a<br>
+      hike that can be completed in a single day. However, in the United Kingdom, the word<br>
+      walking is also used, as well as rambling, while walking in mountainous areas is called<br>
+      hillwalking. In Northern England, Including the Lake District and Yorkshire Dales,<br>
+      fellwalking describes hill or mountain walks, as fell is the common word for both features<br>
+      there.</p><br>
+      <p>Hiking sometimes involves bushwhacking and is sometimes<br>
+      referred to as such. This specifically refers to difficult walking through dense forest,<br>
+      undergrowth, or bushes, where forward progress requires pushing vegetation aside. In<br></p>
+	  <img class="images2" src="images/hiking150/winterhiker150.jpg" alt="pic">
+      <p>extreme cases of bushwhacking, where the vegetation is so dense that human passage<br>
+      is impeded, a machete is used to clear a pathway. The Australian term bushwalking<br>
+      refers to both on and off-trail hiking. Common terms for hiking used by New Zealanders<br>
+      are tramping (particularly for overnight and longer trips), walking or bushwalking.<br>
+      Trekking is the preferred word used to describe multi-day hiking in the mountainous<br>
+      regions of India, Pakistan, Nepal, North America, South America, Iran, and the highlands<br>
+      of East Africa. Hiking a long-distance trail from end-to-end is also referred to as trekking and as thru-hiking in<br>
+      some places. In North America, multi-day hikes, usually with camping, are referred to as backpacking.</p><br>
+      <h3>Trails - 2023/2024</h3><!-- Title added here -->
+      <div class="list-container">
+        <ul class="left-list">
+          <h3>National Parks(partial list)</h3>
+          <li>Banff National Park</li>
+          <li>Cape Brefon Highland National Park</li>
+          <li>point pelee National Park</li>
+        </ul>
+        <div class="vertical-line"></div>
+        <ul class="right-list">
+          <h3>Provincial Parks (partial list)</h3>
+          <li>Bronte Creek Provincial Park</li>
+          <li>Rock Point Provincial Park</li>
+          <li>selkirk Provincial Park</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-item"><img src="images/ads/mountainsThinkBig.jpg" alt="pic"><br>
+    <br>
+    <br>
+    <br>
+    <img src="images/ads/greymountain.jpg" alt="pic"></div>
+  </div>
+  <div class="flex-title">
+    <h2>Gallery</h2>
+  </div>
+
+  <div class="flex-item">
+	<a><img src="images/outdoor150/outdoor150-1.jpg" alt="Image 1"></a>
+	<a><img src="images/outdoor150/outdoor150-2.jpg" alt="Image 2"></a>
+	<a><img src="images/outdoor150/outdoor150-3.jpg" alt="Image 3"></a>
+	<a><img src="images/outdoor150/outdoor150-4.jpg" alt="Image 4"></a>
+	<a><img src="images/outdoor150/outdoor150-5.jpg" alt="Image 5"></a>
+	<a><img src="images/outdoor150/outdoor150-6.jpg" alt="Image 6"></a>
+	<a><img src="images/outdoor150/outdoor150-7.jpg" alt="Image 7"></a>
+	<a><img src="images/outdoor150/outdoor150-8.jpg" alt="Image 8"></a>
+	<a><img src="images/outdoor150/outdoor150-9.jpg" alt="Image 9"></a>
+	<a><img src="images/outdoor150/outdoor150-10.jpg" alt="Image 10"></a>
+	<a><img src="images/outdoor150/outdoor150-11.jpg" alt="Image 11"></a>
+	<a><img src="images/outdoor150/outdoor150-12.jpg" alt="Image 12"></a>
+  </div>
+  <hr>
+  <h5><strong>Credits</strong></h5>
+  <p>text content was obtained from appropriate Wikipidia pages. Images were obtained from unsplash.com. socialmedia button were generated at iconmonstr.com and logos were created at logomaker.com. License agreement for images do nt require citation for non-profit use. </p>
+  <hr>
+  <footer>
+    <div class="footer-item">
+      <h3>About Us</h3>
+      <ul>
+        <li>Who We are</li>
+        <li>What We Stand for</li>
+        <li>How you can help</li>
+      </ul>
+    </div>
+    <div class="footer-item"></div>
+    <div class="footer-item">
+      <h3>Seminars</h3>
+      <ul>
+        <li>Trip Planing</li>
+        <li>Hiking</li>
+        <li>Camping</li>
+      </ul>
+	  <h3>Countries</h3>
+      <ul>
+        <li>Belgium</li>
+        <li>Canada</li>
+        <li>China</li>
+		<li>Copenhagen</li>
+        <li>Cyprus</li>
+        <li>Greece</li>
+		<li>India</li>
+        <li>Italy</li>
+        <li>Japan</li>
+		<li>New Zealand</li>
+        <li>Nigeria</li>
+        <li>Turkey</li>
+		<li>United States</li>
+      </ul>
+    </div>
+  </footer>
+  <footer>
+    <div class="footer2-text">
+      <h4>Travel Time</h4>
+      <div class="footer-text">
+        <a href="#"><img src="images/socialmedia/twitter32.png" alt="Pic"></a> <a href="#"><img src="images/socialmedia/instagram32.png" alt="Pic"></a> <a href="#"><img src="images/socialmedia/pinterest32.png" alt="Pic"></a> <a href="#"><img src="images/socialmedia/youtube32.png" alt="Pic"></a> <a href="#"><img src="images/socialmedia/facebook32.png" alt="Pic"></a> <a href="#"><img src="images/socialmedia/emailat32.png" alt="Pic"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
