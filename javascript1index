@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assign1.css"/>
+    </head>
+    <header>
+        <title></title>
+        <!-- VaskarGhimirey, 000937198 -->
+    </header>
+    <nav>
+        <ul><li><a class="active "href="./page2.html">page2</a></li>
+        <li><a href="./index.html">back</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <body>
+
+        <h1> My Interests and Hobbies </h1>
+        
+        <h2> Brief Description: </h2>
+        
+        <p> My interests and hobbies include playing sports, listening to music, and playing video games.  </p><br>
+        <img src="Messi.png" alt="" style="width:170px; height:170px; margin-right:20px;">
+        <img src="music.png" alt="" style="width:170px; height: 170px; margin-right:15px;">
+        <img src="volleyball.png" alt="" style="width:170px; height: 170px; margin-right:15px;"> 
+        <img src="Assassins creed.png" alt="" style="width:170px; height: 170px; margin-right:15px;"> 
+        <h3>Examples:</h3>
+        <p> Soccer </p>
+        <p> Basketball </p>
+        <p> VolleyBall </p>
+        <p> Violin </p>
+        <p> Paino </p>
+        
+    
+
+    </body>
+    <footer>
+        <p> © 2024, Vaskar Ghimirey, Mohawk College </p>
+    </footer>
+</html>
