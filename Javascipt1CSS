@@ -1,0 +1,85 @@
+html{
+    background-color: royalblue;
+}
+
+  
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+      }
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+marquee{
+    height: 100vh;
+}
+
+.ball{
+    max-width: 400px;
+    animation: movement 20s linear infinite;
+    weight: 100;
+    height: 100;
+
+}
+
+
+@keyframes movement{
+
+
+    16%, 48%, 78%{
+        top:300px;
+        animation-timing-function: ease-in-out;
+    }
+
+    32%{
+        top: 50;
+        animation-timing-function: ease-out;
+    }
+
+    62%{
+        top: 150;
+        animation-timing-function: ease-in-out;
+    }
+    
+    90%{
+        top: 200;
+        animation-timing-function: ease-in-out;
+    }
+    
+    100%{
+        top: 270;
+        left: 100%;
+        animation-timing-function: ease-out;
+        transform: rotate(360deg);
+    }
+
