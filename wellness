@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><!-- Author: Vaskar Ghimirey, 000937198 -->
+	<title> Toronto Health and Wellness </title>
+	<link rel = "stylesheet" href ="css/styles.css">
+</head>
+
+	<style>
+			body {
+				background-color: white;
+				margin: 0 3em 5em 3em;
+			}
+
+			
+			h1 {
+				text-align: center;
+				color: #FFA559;
+			}
+			
+			h2, h3 {
+				color: #FFA559;
+			}
+			
+			
+			.italic1 {
+				text-decoration-line: underline;
+				text-decoration-style: double;
+			}
+			
+			
+			
+			.check1 {
+				list-style-image: url(Images/orange_checkmark_sm.jpg);
+			}
+			
+			
+			header {
+				text-align: center;
+				background-color: #FEE8B0;
+				line-height: 200%;
+			}
+			
+			header a:hover {
+				color: white;
+			}
+			
+			header a:active {
+				color: black;
+				-webkit-transform: scale(0.98);
+				transform: scale(0.98);
+			}
+
+			header a {
+			   color: #FFA559;
+			   font-weight: bold;
+			   
+			}
+
+			header li {
+			   display: inline;
+			   list-style-type: none;
+			   padding-right: 50px;
+			}
+			
+
+			
+			.header2 {
+				color: #FFA559;
+				text-align: center;
+				padding: 20px;
+				letter-spacing: 10px;
+			}
+			
+			.header2 h2 {
+				display: inline;
+			}
+			
+			.header2 img {
+				vertical-align: middle;
+			}
+			
+
+			.mid1 {
+				margin-top: 50px;
+				display: flex;
+				flex-wrap: wrap;
+				
+			}
+			
+			.mid1 aside {
+				flex: 1;
+				margin: 0 0 15px 10px;
+			}
+			
+			aside {
+				margin-left: 10px;
+			}
+			
+			.mid2 {
+				line-height: 2.5em;
+				flex: 1;
+				margin-bottom: 3em;
+				
+			}
+			
+			.tomato {
+				list-style-image: url(Images/tomato_sm.jpg);
+			}
+			
+			.wheat {
+				list-style-image: url(Images/wheat_sm.jpg);
+			}
+			
+
+			footer {
+				padding: 10px;
+				border-top: 2px solid black;
+				border-bottom: 2px solid black;
+				background-image: url(Images/ricepaper.png);
+                text-align: center;
+			}
+
+	</style>
+
+<body>
+		<header>
+		
+			<ul>
+				<li><a href="#HealthyEating" title="Healthy Eating">Healthy Eating</a></li>
+				<li><a href="#Fitness" title="Fitness">Fitness</a></li>
+				<li><a href="#MentalHealth" title="Mental Health">Mental Health</a></li>
+				<li><a href="#ContactUs" title="Contact Us">Contact Us</a></li>
+			</ul>
+		
+		</header>
+		<h1>Our City Health and Wellness</h1>
+		<section class="header2">
+			<img src="Images/veggies.jpg" title="veggies">
+			<h2>Healthy Eating</h2>
+			<img src="Images/veggies.jpg" title="veggies">
+		</section>
+		
+<section class="mid1">
+<img src="images/healthyplate.JPG"/>
+<aside>
+<h2> How to develop a Healthy Eating Pattern </h2>
+<p>You can devolop a healthy eating pattern by:</p>
+
+	<ul class="mid2">
+		<li class="tomato">Eating more vegetables and fruits</li>
+		<li class="tomato">dark green such as broccoli and bok choy</li>
+		<li class="tomato">orange such as carrots</li>
+		<li class="tomato">Selecting whole grain varieties of grain foods</li>
+		<li class="wheat">whole grain pasta</li>
+		<li class="wheat">whole grain bread</li>
+		<li class="wheat">whole oats or oatmeal</li>
+		<li class="wheat">whole grain brown or wild rice</li>
+		<li class="tomato">Replacing meats higher in saturated fat with leaner varieties</li>
+		<li class="tomato">Replacing some of the meat in your meals with plant-based protein foods</li>
+		<li class="tomato">Limiting highly processed foods</li>
+	</ul>
+</aside>
+</section>
+
+	<h2>Limit highly processed foods</h2>
+	<p>Highly processed foods are processed or prepared foods and drinks that add excess sodium, sugars or saturated fat to the diets of Canadians.</p>
+	
+		<ul><em class="italic1">How to limit highly processed foods</em>
+			<li>replace sugary drinks with water</li>
+			<li>choose healthier menu options when eating out</li>
+			<li>make homemade versions of your favourite highly processed foods</li>
+		</ul>
+
+		<ul><em class="italic1">Highly Processed Foods include</em>
+			<li>sugary drinks</li>
+			<li>syrups and jams</li>
+			<li>chocolate and candies</li>
+			<li>potato chips and pretzels</li>
+			<li>sauces, dressings and gravies</li>
+			<li>ice cream and frozen desserts</li>
+			<li>fast foods like French fries and burgers</li>
+		</ul>
+<h3>Make Water your drink of choice</h3>
+<p>You can<span style="color:#F97B22"><em>add fruits and herbs</em></span> to your hot or cold water for flavour.</p>
+
+		<ul>
+			<li>5 ways to add flavour to your water
+				<ol type="a">
+					<li>blackberries + mint</li>
+					<li>raspberries + cucumber</li>
+					<li>strawberries + fresh basil</li>
+					<li>chopped apples + a cinnamon stick</li>
+					<li>pear slices + a drop of vanilla extract</li>
+				</ol>
+			</li>
+			<li class="check1"> If you like some fizz in your drink, try carbonated water</li>
+			<li>Choose drinks that have little to no added sodium, sugars or saturated fat</li>
+		</ul>
+		
+<h2>Resources</h2>
+<ul>
+	<li><a href="https://food-guide.canada.ca/en/"> Canada's Food Guide</a>
+		<li><a href="https://food-guide.canada.ca/en/">https://food-guide.canada.ca/en/</a></li>
+		<li><a href="https://food-guide.canada.ca/en/tips-for-healthy-eating/">Tips for Healthy Eating</a></li>
+	</li>
+	<li>Images are from <a href="http://unsplash.com">http://unsplash.com</a></li>
+</ul>
+
+	<footer>
+	 <h3> Contract Us </h3>
+	 <strong><em> Vaskar Ghimirey - Welness Advisor <br> Your Company Name
+	 </em></strong>
+	 </footer>
+</body>
+</html>
+
